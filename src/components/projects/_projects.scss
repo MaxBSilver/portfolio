@@ -1,0 +1,27 @@
+.projects {
+ height: 60em;
+ background: #2E3441;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+}
+.project-header-container {
+    margin-top: 2em;
+}
+.project-header-bar {
+    border-bottom: 0.35em solid #e5f3fa;
+    width: 10em;
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    animation: slideLeft 0.4s linear forwards;
+    margin-top: 0.4em;
+    
+  }
+  .project h1 {
+    margin-bottom: 0.2em;
+    color: #e5f3fa;
+    animation: fadeIn 0.2s linear forwards;
+    font-weight: bold;
+    animation: slideRight 0.4s linear forwards;
+  }

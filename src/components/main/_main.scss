@@ -1,0 +1,63 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+main {
+  background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+}
+.main--information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+  height: 100%;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2.6em;
+  color: #e5f3fa;
+}
+.portfolio--container {
+  position: relative;
+}
+h1 span {
+  color: #018fd3;
+}
+.main--contact-btn {
+  color: #e5f3fa;
+  background: transparent;
+  border: none;
+  font-size: 3em;
+  transition: color 0.3s;
+}
+.main--contact-container {
+  display: flex;
+  justify-content: space-around;
+  width: 18em;
+  margin: 2em;
+}
+.main--contact-btn:hover {
+  color: #018fd3;
+  transition: color 0.5s;
+}
+.main--show-more-button,
+.main--show-more-button:focus {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  color: #e5f3fa;
+  width: 10em;
+  height: 3em;
+  background: transparent;
+  border: 0.08em solid #e5f3fa;
+  transition: background-color 0.5s, border 0.5s;
+}
+.main--show-more-button:hover
+ {
+  background-color: #018fd3;
+  border: 0.08em solid #018fd3;
+  transition: border 0.5s, background-color 0.5s;
+}
+

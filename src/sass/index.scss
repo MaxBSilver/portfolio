@@ -1,4 +1,27 @@
-@import './variables';
-@import '../components/about/about';
-@import '../components/main/main';
-@import '../components//projects/projects';
+@import "./variables";
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import "../components/about/about";
+@import "../components/main/main";
+@import "../components//projects/projects";
+@import "../components/nav/nav";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#root {
+
+  box-sizing: border-box;
+
+}
+html,
+body,
+main,
+.App {
+  min-height: 100%;
+
+}
+
+.portfolio-container {
+  height: 100em;
+}
