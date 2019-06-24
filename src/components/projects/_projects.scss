@@ -65,6 +65,11 @@
   font-size: 30px;
   margin-right: 10px;
 }
+.evernote-icon {
+  color: #01d37b;
+  font-size: 30px;
+  margin-right: 10px;
+}
 
 .sass-icon {
   color: rgb(218, 113, 130);
@@ -86,6 +91,7 @@
   color: #e5f3fa;
   transition: color 0.5s;
   font-size: 40px;
+  margin-bottom: 20px;
 }
 .github-button:hover {
   color: #018fd3;
@@ -95,4 +101,10 @@
   margin-right: 10px;
 
   color: rgb(229, 248, 123);
+}
+
+.node-icon {
+  color: #51be91;
+  font-size: 30px;
+  margin-right: 10px;
 }

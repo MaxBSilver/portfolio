@@ -7,11 +7,13 @@ import {
   faJs,
   faReact,
   faSass,
-  faGithub
+  faGithub,
+  faEvernote,
+  faNode
 } from "@fortawesome/free-brands-svg-icons";
-import { faStroopwafel, faCloud } from "@fortawesome/free-solid-svg-icons";
+import { faCloud } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faJs, faStroopwafel, faReact, faSass, faGithub);
+library.add(faJs, faReact, faSass, faGithub, faEvernote, faNode);
 export class Projects extends Component {
   constructor(props) {
     super(props);
@@ -83,6 +85,112 @@ export class Projects extends Component {
                   <div className="project-body" style={{ opacity }}>
                     <div className="project-container">
                       <img
+                        alt="helms-keep"
+                        className="project-image"
+                        src="https://i.imgur.com/71bS5tW.png"
+                      />
+                      <section className="project-info">
+                        <h4>HelmsKeep</h4>
+                        <p>
+                          <span className="project-info-title">Overview: </span>
+                          A medieval, gameified version of the popular
+                          application Google Keep.
+                        </p>
+                        <p>
+                          <span className="project-info-title">
+                            Built with:
+                          </span>
+                          <span className="tech-stack-container">
+                            <FontAwesomeIcon
+                              className="react-icon"
+                              icon={faReact}
+                            />
+                            React.js
+                          </span>
+                          <span className="tech-stack-container">
+                            <FontAwesomeIcon
+                              className="node-icon"
+                              icon={faNode}
+                            />
+                            Node.js and Express
+                          </span>
+                        </p>
+                        <p>
+                          <span className="project-info-title">
+                            Check it out on Github:
+                          </span>
+                          <a
+                            href="https://github.com/MaxBSilver/helms-keep"
+                            className="main--contact-btn"
+                            target="blank"
+                          >
+                            <FontAwesomeIcon
+                              className="github-button"
+                              icon={faGithub}
+                            />
+                          </a>
+                        </p>
+                      </section>
+                    </div>
+                    <div className="project-container">
+                      <img
+                        alt="fox-board"
+                        className="project-image"
+                        src="https://i.imgur.com/PLe7buo.jpg"
+                      />
+                      <section className="project-info">
+                        <h4>Movie Tracker</h4>
+                        <p>
+                          <span className="project-info-title">Overview: </span>
+                          Utilizing TheMovieDB users can view the latest movies.
+                          Users can create an account and favorite movies they
+                          want to watch later.
+                        </p>
+                        <p>
+                          <span className="project-info-title">
+                            Built with:
+                          </span>
+                          <span className="tech-stack-container">
+                            <FontAwesomeIcon
+                              className="react-icon"
+                              icon={faReact}
+                            />
+                            React.js and Redux
+                          </span>
+                          <span className="tech-stack-container">
+                            <FontAwesomeIcon
+                              className="evernote-icon"
+                              icon={faEvernote}
+                            />
+                            PostgreSQL
+                          </span>
+                          <span className="tech-stack-container">
+                            <FontAwesomeIcon
+                              className="sass-icon"
+                              icon={faSass}
+                            />
+                            SASS
+                          </span>
+                        </p>
+                        <p>
+                          <span className="project-info-title">
+                            Check it out on Github:
+                          </span>
+                          <a
+                            href="https://github.com/MaxBSilver/Movie-Tracker"
+                            className="main--contact-btn"
+                            target="blank"
+                          >
+                            <FontAwesomeIcon
+                              className="github-button"
+                              icon={faGithub}
+                            />
+                          </a>
+                        </p>
+                      </section>
+                    </div>
+                    <div className="project-container">
+                      <img
                         alt="fox-board"
                         className="project-image"
                         src="https://i.imgur.com/gAFbZ2t.png"
@@ -120,103 +228,7 @@ export class Projects extends Component {
                             Check it out on Github:
                           </span>
                           <a
-                            href="https://maxbsilver.github.io/foxy-flexbox/"
-                            className="main--contact-btn"
-                          >
-                            <FontAwesomeIcon
-                              className="github-button"
-                              icon={faGithub}
-                            />
-                          </a>
-                        </p>
-                      </section>
-                    </div>
-                    <div className="project-container">
-                      <img
-                        alt="fox-board"
-                        className="project-image"
-                        src="https://i.imgur.com/xx5iJUb.png"
-                      />
-                      <section className="project-info">
-                        <h4>Weatherly</h4>
-                        <p>
-                          <span className="project-info-title">Overview: </span>
-                          Leverages the ipAPI and WeatherBit API to provide the
-                          user a real-time weather forecast.
-                        </p>
-                        <p>
-                          <span className="project-info-title">
-                            Built with:
-                          </span>
-                          <span className="tech-stack-container">
-                            <FontAwesomeIcon
-                              className="react-icon"
-                              icon={faReact}
-                            />
-                            React.js
-                          </span>
-                          <span className="tech-stack-container">
-                            <FontAwesomeIcon
-                              className="api-icon"
-                              icon={faCloud}
-                            />
-                            WeatherBit and ipAPI
-                          </span>
-                        </p>
-                        <p>
-                          <span className="project-info-title">
-                            Check it out on Github:
-                          </span>
-                          <a
-                            href="https://maxbsilver.github.io/foxy-flexbox/"
-                            className="main--contact-btn"
-                          >
-                            <FontAwesomeIcon
-                              className="github-button"
-                              icon={faGithub}
-                            />
-                          </a>
-                        </p>
-                      </section>
-                    </div>
-                    <div className="project-container">
-                      <img
-                        alt="fox-board"
-                        className="project-image"
-                        src="https://i.imgur.com/xx5iJUb.png"
-                      />
-                      <section className="project-info">
-                        <h4>Weatherly</h4>
-                        <p>
-                          <span className="project-info-title">Overview: </span>
-                          Leverages the ipAPI and WeatherBit API to provide the
-                          user a real-time weather forecast.
-                        </p>
-                        <p>
-                          <span className="project-info-title">
-                            Built with:
-                          </span>
-                          <span className="tech-stack-container">
-                            <FontAwesomeIcon
-                              className="react-icon"
-                              icon={faReact}
-                            />
-                            React.js
-                          </span>
-                          <span className="tech-stack-container">
-                            <FontAwesomeIcon
-                              className="api-icon"
-                              icon={faCloud}
-                            />
-                            WeatherBit and ipAPI
-                          </span>
-                        </p>
-                        <p>
-                          <span className="project-info-title">
-                            Check it out on Github:
-                          </span>
-                          <a
-                            href="https://maxbsilver.github.io/foxy-flexbox/"
+                            href="https://github.com/MaxBSilver/foxy-flexbox"
                             className="main--contact-btn"
                           >
                             <FontAwesomeIcon
