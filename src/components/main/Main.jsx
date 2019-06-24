@@ -5,7 +5,7 @@ import {
   faEnvelope,
   faChevronCircleDown
 } from "@fortawesome/free-solid-svg-icons";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -15,9 +15,8 @@ class Main extends React.Component {
   }
   handleClick = () => {};
   render() {
-    console.log(window.location);
     return (
-      <main style={{ height: window.screen.availHeight }}>
+      <main style={{ height: window.screen.availHeight + 100}}>
         <section className="main--information">
           <h1>
             Hello, I'm <span>Max Silver</span>.<br /> I'm a front-end web
