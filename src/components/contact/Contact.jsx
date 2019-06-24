@@ -29,45 +29,54 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-section" className="contact">
+    <section className="contact-section contact">
       <h1>Contact</h1>
-      <form action={`https://formspree.io/maxbsilver@gmail.com`} method="POST">
-        <div className="input-container">
-          <div className="input-box">
-            <label htmlFor="sender-name">Your name:</label>
+      <section className="contact-container">
+        <form
+          action={`https://formspree.io/maxbsilver@gmail.com`}
+          method="POST"
+        >
+          <div className="input-container">
+            <div className="input-box">
+              <label htmlFor="sender-name">Your name:</label>
+              <input
+                onChange={inputHandler}
+                name="name"
+                id="sender-name"
+                type="text"
+              />
+            </div>
+            <div className="input-box">
+              <label htmlFor="sender-email">Your e-mail:</label>
+              <input
+                name="email"
+                onChange={inputHandler}
+                id="sender-email"
+                type="email"
+              />
+            </div>
+            <div className="input-box">
+              <label htmlFor="message">Your message:</label>
+              <textarea
+                onChange={inputHandler}
+                name="message"
+                id="message"
+                type="text"
+              />
+            </div>
             <input
-              onChange={inputHandler}
-              name="name"
-              id="sender-name"
-              type="text"
+              className={`submit-btn ${enabled && "email-btn"}`}
+              type="submit"
+              value="Send"
+              disabled={!enabled}
             />
           </div>
-          <div className="input-box">
-            <label htmlFor="sender-email">Your e-mail:</label>
-            <input
-              name="email"
-              onChange={inputHandler}
-              id="sender-email"
-              type="email"
-            />
-          </div>
-          <div className="input-box">
-            <label htmlFor="message">Your message:</label>
-            <textarea
-              onChange={inputHandler}
-              name="message"
-              id="message"
-              type="text"
-            />
-          </div>
-          <input
-            className={`submit-btn ${enabled && "email-btn"}`}
-            type="submit"
-            value="Send"
-            disabled={!enabled}
-          />
-        </div>
-      </form>
+        </form>
+        <section className="contact-info-container">
+          <p>Phone Number : 727-644-2277</p>
+          <p>Email Address : Maxbsilver@gmail.com</p>
+        </section>
+      </section>
     </section>
   );
 };
