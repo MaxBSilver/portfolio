@@ -1,27 +1,110 @@
 .projects {
- height: 60em;
- background: #2E3441;
- align-items: center;
- display: flex;
- flex-direction: column;
+  background: #2e3441;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .project-header-container {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 .project-header-bar {
-    border-bottom: 0.35em solid #e5f3fa;
-    width: 10em;
-    border-radius: 4%;
-    display: flex;
-    justify-content: center;
-    animation: slideLeft 0.4s linear forwards;
-    margin-top: 0.4em;
-    
+  border-bottom: 0.35em solid #e5f3fa;
+  width: 10em;
+  border-radius: 4%;
+  display: flex;
+  justify-content: center;
+  animation: slideLeft 0.4s linear forwards;
+}
+.project h1 {
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+  color: #e5f3fa;
+  animation: fadeIn 0.2s linear forwards;
+  font-weight: bold;
+  animation: slideRight 0.4s linear forwards;
+}
+.project-container {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+}
+.project-body {
+  margin-top: 3em;
+
+  width: 60em;
+  & img {
+    width: 70%;
+    padding: 0em 1em;
   }
-  .project h1 {
-    margin-bottom: 0.2em;
+  & .project-info {
+    background-color: #222631;
     color: #e5f3fa;
-    animation: fadeIn 0.2s linear forwards;
-    font-weight: bold;
-    animation: slideRight 0.4s linear forwards;
+    & h4 {
+      padding: 5px 13px;
+      font-size: 30px;
+    }
+    & p {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      line-height: 20px;
+      word-spacing: 1.5px;
+      letter-spacing: 2px;
+      padding: 0.5em 2em;
+      margin: 0;
+      & span {
+        padding: 5px 0;
+      }
+    }
   }
+}
+
+.react-icon {
+  color: #018fd3;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.evernote-icon {
+  color: #01d37b;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.sass-icon {
+  color: rgb(218, 113, 130);
+  font-size: 30px;
+  margin-right: 10px;
+}
+.tech-stack-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-info-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #018fd3;
+}
+
+.github-button {
+  color: #e5f3fa;
+  transition: color 0.5s;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.github-button:hover {
+  color: #018fd3;
+}
+.api-icon {
+  font-size: 20px;
+  margin-right: 10px;
+
+  color: rgb(229, 248, 123);
+}
+
+.node-icon {
+  color: #51be91;
+  font-size: 30px;
+  margin-right: 10px;
+}

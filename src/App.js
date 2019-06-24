@@ -3,6 +3,7 @@ import Main from "./components/main/Main";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import Nav from "./components/nav/Nav";
+import Contact from './components/contact/Contact';
 
 class App extends Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class App extends Component {
         <Nav />
         <About id="about" />
         <Projects id="projects"/>
+        <Contact id="contact"/>
       </div>
     );
   }

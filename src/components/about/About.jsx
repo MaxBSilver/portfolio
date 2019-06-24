@@ -10,7 +10,7 @@ import {
   faCaretDown
 } from "@fortawesome/free-solid-svg-icons";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default class About extends React.Component {
   constructor(props) {
@@ -32,7 +32,6 @@ export default class About extends React.Component {
     }
   };
   handleFooterChange = isVisible => {
-    console.log(isVisible);
     if (isVisible) {
       this.setState({ footerActive: false });
     }
@@ -40,7 +39,10 @@ export default class About extends React.Component {
   render() {
     return (
       <div>
-        <section className="about">
+        <section
+          className="about"
+          style={{ height: window.screen.availHeight }}
+        >
           <section className="about-header-container">
             <VisibilitySensor
               active={this.state.headerActive}
@@ -87,7 +89,7 @@ export default class About extends React.Component {
                     style={{ marginTop }}
                   >
                     <Spring
-                      delay={1100}
+                      delay={900}
                       to={{
                         opacity: isVisible ? 1 : 0
                       }}
@@ -114,7 +116,7 @@ export default class About extends React.Component {
                       )}
                     </Spring>
                     <Spring
-                      delay={1500}
+                      delay={1300}
                       to={{
                         opacity: isVisible ? 1 : 0
                       }}
@@ -141,7 +143,7 @@ export default class About extends React.Component {
                       )}
                     </Spring>
                     <Spring
-                      delay={1900}
+                      delay={1700}
                       to={{
                         opacity: isVisible ? 1 : 0
                       }}
@@ -165,7 +167,7 @@ export default class About extends React.Component {
                       )}
                     </Spring>
                     <Spring
-                      delay={2300}
+                      delay={2200}
                       to={{
                         opacity: isVisible ? 1 : 0
                       }}
@@ -208,33 +210,33 @@ export default class About extends React.Component {
                 >
                   {({ opacity, marginRight }) => (
                     <React.Fragment>
-                    <div
-                      className="about-article-footer-container-main"
-                      style={{ opacity, marginRight }}
-                    >
-                      <h2>Who am I?</h2>
-                      <p className="about-bio">
-                        I'm a front-end software developer with a methodical
-                        approach to problem solving. Ever curious, I always am
-                        excited to learn and adapt to new technologies. I employ
-                        strict organization to maintain a productive and
-                        efficient workflow. I excel in team and group
-                        environments through accountability, communication, and
-                        dedication.
-                      </p>
-                    </div>
-                    <Link
-                    to="projects"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={550}
-                  >
-                    <button className="about-project-button" style={{opacity}}>
-                      Projects <FontAwesomeIcon icon={faCaretDown} />
-                    </button>
-                  </Link>
-                  </React.Fragment>
+                      <div
+                        className="about-article-footer-container-main"
+                        style={{ opacity, marginRight }}
+                      >
+                        <h2>Who am I?</h2>
+                        <p className="about-bio">
+                          I'm a front-end software developer with a methodical
+                          approach to problem solving. I have a passion for UI
+                          effects, animations and creating an intuitive user
+                          experience. I have experience with React.js, Vue.js, Node.js, Express, PostgreSQL, REST APIs and SASS.
+                        </p>
+                      </div>
+                      <Link
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={550}
+                      >
+                        <button
+                          className="about-project-button"
+                          style={{ opacity }}
+                        >
+                          Projects <FontAwesomeIcon icon={faCaretDown} />
+                        </button>
+                      </Link>
+                    </React.Fragment>
                   )}
                 </Spring>
               </section>
