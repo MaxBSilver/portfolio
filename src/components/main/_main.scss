@@ -30,7 +30,7 @@ h1 span {
   color: #e5f3fa;
   background: transparent;
   border: none;
-  font-size: 3em;
+  font-size: 2em;
   transition: color 0.3s;
 }
 .main--contact-container {
@@ -54,10 +54,8 @@ h1 span {
   border: 0.08em solid #e5f3fa;
   transition: background-color 0.5s, border 0.5s;
 }
-.main--show-more-button:hover
- {
+.main--show-more-button:hover {
   background-color: #018fd3;
   border: 0.08em solid #018fd3;
   transition: border 0.5s, background-color 0.5s;
 }
-

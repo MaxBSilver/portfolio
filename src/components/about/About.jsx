@@ -217,12 +217,9 @@ export default class About extends React.Component {
                         <h2>Who am I?</h2>
                         <p className="about-bio">
                           I'm a front-end software developer with a methodical
-                          approach to problem solving. Ever curious, I always am
-                          excited to learn and adapt to new technologies. I
-                          employ strict organization to maintain a productive
-                          and efficient workflow. I excel in team and group
-                          environments through accountability, communication,
-                          and dedication.
+                          approach to problem solving. I have a passion for UI
+                          effects, animations and creating an intuitive user
+                          experience. I have experience with React.js, Vue.js, Node.js, Express, PostgreSQL, REST APIs and SASS.
                         </p>
                       </div>
                       <Link

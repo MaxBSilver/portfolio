@@ -11,7 +11,6 @@ import {
   faEvernote,
   faNode
 } from "@fortawesome/free-brands-svg-icons";
-import { faCloud } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faJs, faReact, faSass, faGithub, faEvernote, faNode);
 export class Projects extends Component {
@@ -105,7 +104,7 @@ export class Projects extends Component {
                               className="react-icon"
                               icon={faReact}
                             />
-                            React.js
+                            React.js and Redux
                           </span>
                           <span className="tech-stack-container">
                             <FontAwesomeIcon
