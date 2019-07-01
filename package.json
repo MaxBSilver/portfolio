@@ -42,5 +42,9 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.0.1"
+  },
+  "engines": {
+    "npm": "6.92",
+    "node": "11.7.0"
   }
 }
